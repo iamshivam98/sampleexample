@@ -1,0 +1,67 @@
+.demo {
+  text-align: center;
+  font-size: 25px;
+}
+
+.td {
+  text-align: center;
+}
+.tt{
+  text-align: center;
+}
+.gg{
+  font-weight: bold;
+  font-size: 24px;
+}
+.slds-modal__container{
+  width: 90% !important;
+  max-width: 90% !important;
+  max-height: 80vh !important;
+  height: 80vh !important;
+}
+
+.slds-table--header-fixed {
+position: relative;
+}
+.abc{
+line-height:30px;
+}
+.slds-text-heading_medium.slds-hyphenate {
+  font-weight: bold;
+  font-size: small;
+}
+.demo1 {
+  text-align: center;
+  font-size: 25px;
+}
+.fre-slds-text-heading_medium {
+  font-weight: bold;
+  font-size: 24px;
+}
+.oty-slds-text-heading_medium {
+  font-weight: bold;
+  font-size: 24px;
+}
+.slds-modal__content table {
+  overflow-x: auto;
+}
+
+.xys{
+  text-align: center ;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+}
+.merge-icon {
+  margin-right: 10px;
+}
+.content {
+  flex-grow: 1;
+ 
+}
+
+.abc{
+  font-size: medium;
+}

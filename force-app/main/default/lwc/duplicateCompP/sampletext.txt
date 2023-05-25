@@ -1,0 +1,72 @@
+<template for:each={compareRec} for:item="rec">
+ <td key={rec.Id} class="slds-cell-buffer-right colm">
+  <br>
+ <input type="radio" id={rec.Id} name={rec} onclick={masterId} />
+&nbsp;&nbsp;
+<b><label for={rec.Id}>Use as Master</label></b>
+</td>
+
+
+
+<thead>
+  <tr>
+   <th class="slds-cell-wrap slds-p-left_medium" scope="col">Principal Records</th>
+  <template for:each={selectedRowIdss} for:item="item1" for:index="index">
+   <th key={item1.id} class="slds-cell-wrap" scope="col">
+ <label class="slds-radio">
+   <input type="radio" name={item1} id={item1.id} data-value="USE AS MASTER" onchange={handleRadioChange}/>
+    <span class="slds-radio--faux"></span>
+ USE AS MASTER
+                                            </label>
+                                        </th>
+                                    </template>  
+                                </tr>
+                            </thead>
+
+
+
+
+
+
+
+<template for:each={finalRecordsToDisplay} for:item="f">
+                                    <tr key={f.fieldName}>
+                                        <th class="slds-cell-buffer-right colm">
+                                            <div class="slds-truncate">{f.label}
+                                            </div>
+                                        </th>
+                                        <template for:each={f.fieldValues} for:item="d">
+<td key={d.Id} class="slds-cell-buffer-right colm">
+                                                <input type="radio" id={d.dataValue} name={f.fieldName}
+                                                    title={d.dataValue} onclick={findFieldValues} />{d.dataValue}
+                                            </td>
+                                        </template>
+
+
+<tbody>
+    <template for:each={listofrecords} for:item="item2" for:index="index">
+  <tr key={item2.fieldName}>
+   <td class="slds-cell-wrap slds-p-left_medium">{item2.value}</td>
+ <template for:each={item2.fieldvalues} for:item="entryitem" for:index="index2">
+  <td key={entryitem.Id} class="slds-cell-wrap">
+      <div class="slds-form-element">
+     <div class="slds-form-element__control">
+     <label class="slds-radio">
+      <input type="radio" name={item2.fieldName} id={item2.entryitem} data-value={entryitem} onchange={handleRadioChange}/>
+       <span class="slds-radio--faux"></span>
+       {entryitem}
+        </label>
+       </div>
+       </div>
+        </td>
+      </template>
+      </tr>
+       </template>
+    
+    
+                            </tbody>
+
+
+
+
+
